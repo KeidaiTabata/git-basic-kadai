@@ -1,0 +1,75 @@
+  424  mkdir git_challenge
+  425  touch git_challenge/hello_world.txt
+  426  cd git_challenge
+  427  cat hello_world.txt
+  428  echo "Hello, world" >> hello_world.txt
+  429  cat hello_world.txt
+  430  git init
+  431  git status
+  432  git add hello_world.txt
+  433  git commit -m "1回目のコミット"
+  434  echo "こんにちは、世界！" >> hello_world.txt
+  435  git status
+  436  git add hello_world.txt
+  437  git commit -m "日本語訳を追記"
+  438  git history
+  439  git log
+  440  git log --oneline
+  441  pwd
+  442  mkdir kadai_005
+  444  B0906:commandline ktabata$ touch git_challenge/hello_world.txt
+  445  B0906:commandline ktabata$ cd git_challenge
+  446  B0906:git_challenge ktabata$ cat hello_world.txt
+  447  B0906:git_challenge ktabata$ echo "Hello, world" >> hello_world.txt
+  448  B0906:git_challenge ktabata$ cat hello_world.txt
+  449  Hello, world
+  450  B0906:git_challenge ktabata$ git init
+  451  Initialized empty Git repository in /Users/ktabata/Documents/program_lesson/samurai-terakoya/commandline/git_challenge/.git/
+  452  B0906:git_challenge ktabata$ git status
+  453  On branch main
+  454  No commits yet
+  455  Untracked files:
+  456    (use "git add <file>..." to include in what will be committed)
+  457  hello_world.txt
+  458  nothing added to commit but untracked files present (use "git add" to track)
+  459  B0906:git_challenge ktabata$ git add hello_world.txt
+  460  B0906:git_challenge ktabata$ git commit -m "1回目のコミット"
+  461  [main (root-commit) d5fa505] 1回目のコミット
+  462   1 file changed, 1 insertion(+)
+  463   create mode 100644 hello_world.txt
+  464  B0906:git_challenge ktabata$ echo "こんにちは、世界！" >> hello_world.txt
+  465  B0906:git_challenge ktabata$ git status
+  466  On branch main
+  467  Changes not staged for commit:
+  468    (use "git add <file>..." to update what will be committed)
+  469    (use "git restore <file>..." to discard changes in working directory)
+  470  modified:   hello_world.txt
+  471  no changes added to commit (use "git add" and/or "git commit -a")
+  472  B0906:git_challenge ktabata$ git add hello_world.txt
+  473  B0906:git_challenge ktabata$ git commit -m "日本語訳を追記"
+  474  [main ac7160c] 日本語訳を追記
+  475   1 file changed, 1 insertion(+)
+  476  B0906:git_challenge ktabata$ git history
+  477  error: need a subcommand
+  478  usage: git history reword <commit> [--dry-run] [--update-refs=(branches|head)]
+  479     or: git history split <commit> [--dry-run] [--update-refs=(branches|head)] [--] [<pathspec>...]
+  480  B0906:git_challenge ktabata$ git log
+  481  commit ac7160c004f4585f78ac750f951df356706b8d8c (HEAD -> main)
+  482  Author: KeidaiTabata <keidai.tabata@d2c.co.jp>
+  483  Date:   Wed May 13 17:09:30 2026 +0900
+  484      日本語訳を追記
+  485  commit d5fa5050ad4ea775ab32f73d4bba2e7c58d5cc3a
+  486  Author: KeidaiTabata <keidai.tabata@d2c.co.jp>
+  487  Date:   Wed May 13 17:08:53 2026 +0900
+  488      1回目のコミット
+  489  B0906:git_challenge ktabata$ git log --oneline
+  490  ac7160c (HEAD -> main) 日本語訳を追記
+  491  d5fa505 1回目のコミット
+  492  B0906:git_challenge ktabata$ pwd
+  493  /Users/ktabata/Documents/program_lesson/samurai-terakoya/commandline/git_challenge
+  494  pwd
+  495  cd kadai_005
+  496  pwd
+  497  touch kadai_005.txt
+  498  vim kadai_005.txt
+  499  history
